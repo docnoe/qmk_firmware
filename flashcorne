@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# docker run -it --rm -v $(pwd):/qmk_firmware qmkfm/qmk_firmware make crkbd/rev1/common:via:avrdude
+
+# sudo systemctl stop ModemManager.service
+# sudo update-alternatives --config python3 && \
+make crkbd/rev1/common:via && \
+make crkbd/rev1/common:via:avrdude
